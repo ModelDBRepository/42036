@@ -1,0 +1,18671 @@
+LOGICAL_NAME	T_Cell
+TIMING: 0.0 120.0 3.0E-7
+ON_LINE_GRAPH: 1
+STORE_RESULTS: 1
+INT_METHOD: 1
+INT_&_FIRE: 0.0
+#NEUR	128
+neur#=0	Soma
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	6.434E-5
+MEM_AREA	6434.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	SomaIonCa
+Cion	2
+#prm	2
+1.6	0.05	
+ion#=1	SomaIonNa
+Cion	2
+#prm	2
+0.0625	0.016	
+#SM	0
+#I2C	2
+	0	3	Ca	0	SomaIonCa
+	1	1	Na	1	SomaIonNa
+#gbi	2
+gbi#=0	4	KCa	0	SomaIonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	SomaIonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=1	C1
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.13E-5
+MEM_AREA	1130.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O3IonCa
+Cion	2
+#prm	2
+2.84	0.28	
+ion#=1	O3IonNa
+Cion	2
+#prm	2
+0.111	0.091	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O3IonCa
+	1	1	Na	1	O3IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O3IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O3IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=2	CA1
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.0E-6
+MEM_AREA	200.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O13IonCa
+Cion	2
+#prm	2
+17.06	1.6	
+ion#=1	O13IonNa
+Cion	2
+#prm	2
+0.666	0.512	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O13IonCa
+	1	1	Na	1	O13IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O13IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O13IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=3	CA2
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.0E-6
+MEM_AREA	200.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O13IonCa
+Cion	2
+#prm	2
+17.06	1.6	
+ion#=1	O13IonNa
+Cion	2
+#prm	2
+0.666	0.512	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O13IonCa
+	1	1	Na	1	O13IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O13IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O13IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=4	CA3
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.3E-6
+MEM_AREA	230.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C8IonCa
+Cion	2
+#prm	2
+17.06	1.42	
+ion#=1	C8IonNa
+Cion	2
+#prm	2
+0.666	0.455	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C8IonCa
+	1	1	Na	1	C8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=5	CA4
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.9E-6
+MEM_AREA	190.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O14IonCa
+Cion	2
+#prm	2
+17.06	1.7	
+ion#=1	O14IonNa
+Cion	2
+#prm	2
+0.666	0.546	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O14IonCa
+	1	1	Na	1	O14IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O14IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O14IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=6	CA5
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=7	CA6
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=8	CA7
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O10IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	O10IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O10IonCa
+	1	1	Na	1	O10IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O10IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O10IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=9	CA8
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=10	CA9
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.3E-6
+MEM_AREA	230.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O12IonCa
+Cion	2
+#prm	2
+17.06	1.42	
+ion#=1	O12IonNa
+Cion	2
+#prm	2
+0.666	0.455	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O12IonCa
+	1	1	Na	1	O12IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O12IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O12IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=11	CA10
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.3E-6
+MEM_AREA	230.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O12IonCa
+Cion	2
+#prm	2
+17.06	1.42	
+ion#=1	O12IonNa
+Cion	2
+#prm	2
+0.666	0.455	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O12IonCa
+	1	1	Na	1	O12IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O12IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O12IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=12	CA11
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C5IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	C5IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C5IonCa
+	1	1	Na	1	C5IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C5IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C5IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=13	CA12
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.9E-6
+MEM_AREA	190.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C10IonCa
+Cion	2
+#prm	2
+17.06	1.7	
+ion#=1	C10IonNa
+Cion	2
+#prm	2
+0.666	0.546	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C10IonCa
+	1	1	Na	1	C10IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C10IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C10IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=14	CA13
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=15	CA14
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.0E-6
+MEM_AREA	100.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O9IonCa
+Cion	2
+#prm	2
+17.06	0.8	
+ion#=1	O9IonNa
+Cion	2
+#prm	2
+0.666	0.256	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O9IonCa
+	1	1	Na	1	O9IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O9IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O9IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=16	CA15
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.2E-6
+MEM_AREA	120.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C12IonCa
+Cion	2
+#prm	2
+17.06	2.84	
+ion#=1	C12IonNa
+Cion	2
+#prm	2
+0.666	0.91	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C12IonCa
+	1	1	Na	1	C12IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C12IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C12IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=17	CA16
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.0E-6
+MEM_AREA	200.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C9IonCa
+Cion	2
+#prm	2
+17.06	1.42	
+ion#=1	C9IonNa
+Cion	2
+#prm	2
+0.666	0.512	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C9IonCa
+	1	1	Na	1	C9IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C9IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C9IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=18	CA17
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.0E-6
+MEM_AREA	200.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O13IonCa
+Cion	2
+#prm	2
+17.06	1.6	
+ion#=1	O13IonNa
+Cion	2
+#prm	2
+0.666	0.512	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O13IonCa
+	1	1	Na	1	O13IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O13IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O13IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=19	CA18
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C11IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	C11IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C11IonCa
+	1	1	Na	1	C11IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C11IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C11IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=20	CA19
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.3E-6
+MEM_AREA	230.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O12IonCa
+Cion	2
+#prm	2
+17.06	1.42	
+ion#=1	O12IonNa
+Cion	2
+#prm	2
+0.666	0.455	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O12IonCa
+	1	1	Na	1	O12IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O12IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O12IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=21	CA20
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C11IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	C11IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C11IonCa
+	1	1	Na	1	C11IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C11IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C11IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=22	CA21
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.3E-6
+MEM_AREA	230.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O12IonCa
+Cion	2
+#prm	2
+17.06	1.42	
+ion#=1	O12IonNa
+Cion	2
+#prm	2
+0.666	0.455	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O12IonCa
+	1	1	Na	1	O12IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O12IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O12IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=23	CA22
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.0E-6
+MEM_AREA	300.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C6IonCa
+Cion	2
+#prm	2
+17.06	1.06	
+ion#=1	C6IonNa
+Cion	2
+#prm	2
+0.666	0.341	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C6IonCa
+	1	1	Na	1	C6IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C6IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C6IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=24	CA23
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.3E-6
+MEM_AREA	230.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O12IonCa
+Cion	2
+#prm	2
+17.06	1.42	
+ion#=1	O12IonNa
+Cion	2
+#prm	2
+0.666	0.455	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O12IonCa
+	1	1	Na	1	O12IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O12IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O12IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=25	CA24
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C11IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	C11IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C11IonCa
+	1	1	Na	1	C11IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C11IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C11IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=26	CA25
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=27	CA26
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=28	CA27
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=29	CA28
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=30	CA29
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=31	CA30
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C5IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	C5IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C5IonCa
+	1	1	Na	1	C5IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C5IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C5IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=32	CA31
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=33	CA32
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=34	CA33
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=35	CA34
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=36	CA35
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=37	CA36
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=38	CA37
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=39	CA38
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=40	CA39
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=41	CA40
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C11IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	C11IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C11IonCa
+	1	1	Na	1	C11IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C11IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C11IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=42	CA41
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O15IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	O15IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O15IonCa
+	1	1	Na	1	O15IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O15IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O15IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=43	CA42
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C11IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	C11IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C11IonCa
+	1	1	Na	1	C11IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C11IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C11IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=44	CA43
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=45	CA44
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=46	CA45
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=47	CA46
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=48	CA47
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=49	CA48
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=50	CA49
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=51	CA50
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.5E-6
+MEM_AREA	250.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C7IonCa
+Cion	2
+#prm	2
+17.06	1.28	
+ion#=1	C7IonNa
+Cion	2
+#prm	2
+0.666	0.409	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C7IonCa
+	1	1	Na	1	C7IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C7IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C7IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=52	CA51
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=53	CA52
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.5E-6
+MEM_AREA	250.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C7IonCa
+Cion	2
+#prm	2
+17.06	1.28	
+ion#=1	C7IonNa
+Cion	2
+#prm	2
+0.666	0.409	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C7IonCa
+	1	1	Na	1	C7IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C7IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C7IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=54	CA53
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=55	CA54
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=56	CA55
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=57	CA56
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=58	CA57
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=59	CA58
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.5E-6
+MEM_AREA	250.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C7IonCa
+Cion	2
+#prm	2
+17.06	1.28	
+ion#=1	C7IonNa
+Cion	2
+#prm	2
+0.666	0.409	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C7IonCa
+	1	1	Na	1	C7IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C7IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C7IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=60	CA59
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=61	CA60
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.5E-6
+MEM_AREA	250.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C7IonCa
+Cion	2
+#prm	2
+17.06	1.28	
+ion#=1	C7IonNa
+Cion	2
+#prm	2
+0.666	0.409	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C7IonCa
+	1	1	Na	1	C7IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C7IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C7IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=62	CA61
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	2.5E-6
+MEM_AREA	250.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C7IonCa
+Cion	2
+#prm	2
+17.06	1.28	
+ion#=1	C7IonNa
+Cion	2
+#prm	2
+0.666	0.409	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C7IonCa
+	1	1	Na	1	C7IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C7IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C7IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=63	CP1
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.51E-5
+MEM_AREA	1510.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O1IonCa
+Cion	2
+#prm	2
+4.26	0.21	
+ion#=1	O1IonNa
+Cion	2
+#prm	2
+0.166	0.068	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O1IonCa
+	1	1	Na	1	O1IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O1IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O1IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=64	CP2
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.5E-6
+MEM_AREA	450.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O7IonCa
+Cion	2
+#prm	2
+5.68	0.71	
+ion#=1	O7IonNa
+Cion	2
+#prm	2
+0.222	0.227	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O7IonCa
+	1	1	Na	1	O7IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O7IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O7IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=65	CP3
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	9.0E-6
+MEM_AREA	900.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O4IonCa
+Cion	2
+#prm	2
+4.26	0.35	
+ion#=1	O4IonNa
+Cion	2
+#prm	2
+0.166	0.114	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O4IonCa
+	1	1	Na	1	O4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=66	CP4
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.8E-6
+MEM_AREA	480.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C3IonCa
+Cion	2
+#prm	2
+5.68	0.71	
+ion#=1	C3IonNa
+Cion	2
+#prm	2
+0.222	0.227	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C3IonCa
+	1	1	Na	1	C3IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C3IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C3IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=67	CP5
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.5E-6
+MEM_AREA	450.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O7IonCa
+Cion	2
+#prm	2
+5.68	0.71	
+ion#=1	O7IonNa
+Cion	2
+#prm	2
+0.222	0.227	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O7IonCa
+	1	1	Na	1	O7IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O7IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O7IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=68	CP6
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.8E-6
+MEM_AREA	480.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C3IonCa
+Cion	2
+#prm	2
+5.68	0.71	
+ion#=1	C3IonNa
+Cion	2
+#prm	2
+0.222	0.227	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C3IonCa
+	1	1	Na	1	C3IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C3IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C3IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=69	CP7
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.32E-5
+MEM_AREA	1320.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O2IonCa
+Cion	2
+#prm	2
+5.68	0.24	
+ion#=1	O2IonNa
+Cion	2
+#prm	2
+0.222	0.078	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O2IonCa
+	1	1	Na	1	O2IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O2IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O2IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=70	CP8
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.32E-5
+MEM_AREA	1320.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O2IonCa
+Cion	2
+#prm	2
+5.68	0.24	
+ion#=1	O2IonNa
+Cion	2
+#prm	2
+0.222	0.078	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O2IonCa
+	1	1	Na	1	O2IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O2IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O2IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=71	CP9
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.34E-5
+MEM_AREA	1350.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C1IonCa
+Cion	2
+#prm	2
+5.68	0.24	
+ion#=1	C1IonNa
+Cion	2
+#prm	2
+0.222	0.078	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C1IonCa
+	1	1	Na	1	C1IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C1IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C1IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=72	CP10
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	8.8E-6
+MEM_AREA	880.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O5IonCa
+Cion	2
+#prm	2
+8.53	0.36	
+ion#=1	O5IonNa
+Cion	2
+#prm	2
+0.333	0.117	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O5IonCa
+	1	1	Na	1	O5IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O5IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O5IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=73	CP11
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	8.9E-6
+MEM_AREA	890.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C2IonCa
+Cion	2
+#prm	2
+8.53	0.36	
+ion#=1	C2IonNa
+Cion	2
+#prm	2
+0.333	0.117	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C2IonCa
+	1	1	Na	1	C2IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C2IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C2IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=74	CP12
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	6.0E-6
+MEM_AREA	600.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O6IonCa
+Cion	2
+#prm	2
+4.26	0.53	
+ion#=1	O6IonNa
+Cion	2
+#prm	2
+0.166	0.171	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O6IonCa
+	1	1	Na	1	O6IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O6IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O6IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=75	CP13
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	6.0E-6
+MEM_AREA	600.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O6IonCa
+Cion	2
+#prm	2
+4.26	0.53	
+ion#=1	O6IonNa
+Cion	2
+#prm	2
+0.166	0.171	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O6IonCa
+	1	1	Na	1	O6IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O6IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O6IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=76	CP14
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	8.8E-6
+MEM_AREA	880.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O5IonCa
+Cion	2
+#prm	2
+8.53	0.36	
+ion#=1	O5IonNa
+Cion	2
+#prm	2
+0.333	0.117	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O5IonCa
+	1	1	Na	1	O5IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O5IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O5IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=77	CP15
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	8.9E-6
+MEM_AREA	890.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C2IonCa
+Cion	2
+#prm	2
+8.53	0.36	
+ion#=1	C2IonNa
+Cion	2
+#prm	2
+0.333	0.117	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C2IonCa
+	1	1	Na	1	C2IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C2IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C2IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=78	CP16
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	6.0E-6
+MEM_AREA	600.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O6IonCa
+Cion	2
+#prm	2
+4.26	0.53	
+ion#=1	O6IonNa
+Cion	2
+#prm	2
+0.166	0.171	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O6IonCa
+	1	1	Na	1	O6IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O6IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O6IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=79	CP17
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.32E-5
+MEM_AREA	1320.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O2IonCa
+Cion	2
+#prm	2
+5.68	0.24	
+ion#=1	O2IonNa
+Cion	2
+#prm	2
+0.222	0.078	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O2IonCa
+	1	1	Na	1	O2IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O2IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O2IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=80	CP18
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.32E-5
+MEM_AREA	1320.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O2IonCa
+Cion	2
+#prm	2
+5.68	0.24	
+ion#=1	O2IonNa
+Cion	2
+#prm	2
+0.222	0.078	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O2IonCa
+	1	1	Na	1	O2IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O2IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O2IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=81	CP19
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.34E-5
+MEM_AREA	1350.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C1IonCa
+Cion	2
+#prm	2
+5.68	0.24	
+ion#=1	C1IonNa
+Cion	2
+#prm	2
+0.222	0.078	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C1IonCa
+	1	1	Na	1	C1IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C1IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C1IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=82	CP20
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O15IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	O15IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O15IonCa
+	1	1	Na	1	O15IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O15IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O15IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=83	CP21
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=84	CP22
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O10IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	O10IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O10IonCa
+	1	1	Na	1	O10IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O10IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O10IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=85	CP23
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=86	CP24
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O10IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	O10IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O10IonCa
+	1	1	Na	1	O10IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O10IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O10IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=87	CP25
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=88	CP26
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O10IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	O10IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O10IonCa
+	1	1	Na	1	O10IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O10IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O10IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=89	CP27
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C5IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	C5IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C5IonCa
+	1	1	Na	1	C5IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C5IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C5IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=90	CP28
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O10IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	O10IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O10IonCa
+	1	1	Na	1	O10IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O10IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O10IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=91	CP29
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C11IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	C11IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C11IonCa
+	1	1	Na	1	C11IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C11IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C11IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=92	CP30
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=93	CP31
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=94	CP32
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=95	CP33
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=96	CP34
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=97	CP35
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=98	CP36
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=99	CP37
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=100	CP38
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=101	CP39
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=102	CP40
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=103	CP41
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=104	CP42
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=105	CP43
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=106	CP44
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=107	CP45
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C5IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	C5IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C5IonCa
+	1	1	Na	1	C5IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C5IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C5IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=108	CP46
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O15IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	O15IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O15IonCa
+	1	1	Na	1	O15IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O15IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O15IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=109	CP47
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.0E-6
+MEM_AREA	300.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C6IonCa
+Cion	2
+#prm	2
+17.06	1.06	
+ion#=1	C6IonNa
+Cion	2
+#prm	2
+0.666	0.341	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C6IonCa
+	1	1	Na	1	C6IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C6IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C6IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=110	CP48
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O15IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	O15IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O15IonCa
+	1	1	Na	1	O15IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O15IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O15IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=111	CP49
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.0E-6
+MEM_AREA	300.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C6IonCa
+Cion	2
+#prm	2
+17.06	1.06	
+ion#=1	C6IonNa
+Cion	2
+#prm	2
+0.666	0.341	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C6IonCa
+	1	1	Na	1	C6IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C6IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C6IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=112	CP50
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.0E-6
+MEM_AREA	300.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O11IonCa
+Cion	2
+#prm	2
+17.06	1.06	
+ion#=1	O11IonNa
+Cion	2
+#prm	2
+0.666	0.341	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O11IonCa
+	1	1	Na	1	O11IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O11IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O11IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=113	CP51
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=114	CP52
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=115	CP53
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=116	CP54
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=117	CP55
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O15IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	O15IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O15IonCa
+	1	1	Na	1	O15IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O15IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O15IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=118	CP56
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	3.8E-6
+MEM_AREA	380.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C5IonCa
+Cion	2
+#prm	2
+17.06	0.85	
+ion#=1	C5IonNa
+Cion	2
+#prm	2
+0.666	0.273	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C5IonCa
+	1	1	Na	1	C5IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C5IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C5IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=119	CP57
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=120	CP58
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=121	CP59
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=122	CP60
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O15IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	O15IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O15IonCa
+	1	1	Na	1	O15IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O15IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O15IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=123	CP61
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=124	CP62
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	1.5E-6
+MEM_AREA	150.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O15IonCa
+Cion	2
+#prm	2
+17.06	2.1	
+ion#=1	O15IonNa
+Cion	2
+#prm	2
+0.666	0.682	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O15IonCa
+	1	1	Na	1	O15IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O15IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O15IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=125	CP63
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=126	CP64
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	O8IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	O8IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	O8IonCa
+	1	1	Na	1	O8IonNa
+#gbi	2
+gbi#=0	4	KCa	0	O8IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	O8IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+neur#=127	CP65
+
+THRESHOLD	0.0
+SPIKDUR	0.0030
+VMINIT	-52.0
+CM	4.4E-6
+MEM_AREA	440.0E-8
+is_TR=	0
+#VDG	6
+vdg#=0	leak
+Ivd	5
+#prm	2
+1.0E-4	-48.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=1	Na
+Ivd	1
+#prm	3
+0.35	3.0	45.0	
+A	1
+B	1
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-35.0	5.0	1.0	
+tA	1
+#prm	1
+1.0E-4	
+INACTIVATION=B	
+B	2
+#prm	1
+-1.0	
+ssB	1
+#prm	3
+-50.0	9.0	2.0	
+tB	2
+#prm	5
+0.014	2.0E-4	-36.0	3.5	1.0	
+vdg#=2	K
+Ivd	3
+#prm	3
+0.09	2.0	-62.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-22.0	9.0	1.0	
+tA	2
+#prm	5
+0.0060	0.0010	-10.0	10.0	1.0	
+vdg#=3	Ca
+Ivd	3
+#prm	3
+0.0020	1.0	60.0	
+A	1
+B	0
+m	0
+h	0
+R	0
+ACTIVATION=A	
+A	2
+#prm	1
+-1.0	
+ssA	1
+#prm	3
+-10.0	2.8	1.0	
+tA	1
+#prm	1
+6.0E-4	
+vdg#=4	KCa
+Ivd	5
+#prm	2
+0.0236	-62.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+vdg#=5	NaPump
+Ivd	5
+#prm	2
+0.0020	-300.0	
+A	0
+B	0
+m	0
+h	0
+R	0
+#ION	2
+ion#=0	C4IonCa
+Cion	2
+#prm	2
+17.06	0.73	
+ion#=1	C4IonNa
+Cion	2
+#prm	2
+0.666	0.234	
+#SM	0
+#I2C	2
+	0	3	Ca	0	C4IonCa
+	1	1	Na	1	C4IonNa
+#gbi	2
+gbi#=0	4	KCa	0	C4IonCa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.01	
+
+gbi#=1	5	NaPump	1	C4IonNa
+fBR	1
+#prm	0
+
+br	1
+#prm	2
+0.0	0.1	
+
+#gbs	0
+#tbi	0
+#tbs	0
+#sbi	0
+#sbs	0
+#LDG	0
+
+#CELL	0
+
+#ESYN	127
+esyn#=0	0	Soma	1	C1
+Ies	1
+#prm	2
+3.8	3.8	
+R1=	0
+R2=	0
+esyn#=1	1	C1	2	CA1
+Ies	1
+#prm	2
+0.1	0.1	
+R1=	0
+R2=	0
+esyn#=2	2	CA1	8	CA7
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=3	2	CA1	3	CA2
+Ies	1
+#prm	2
+0.1	0.1	
+R1=	0
+R2=	0
+esyn#=4	3	CA2	4	CA3
+Ies	1
+#prm	2
+0.09	0.09	
+R1=	0
+R2=	0
+esyn#=5	3	CA2	5	CA4
+Ies	1
+#prm	2
+0.105	0.105	
+R1=	0
+R2=	0
+esyn#=6	5	CA4	6	CA5
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=7	5	CA4	7	CA6
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=8	8	CA7	9	CA8
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=9	8	CA7	10	CA9
+Ies	1
+#prm	2
+0.09	0.09	
+R1=	0
+R2=	0
+esyn#=10	10	CA9	14	CA13
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=11	10	CA9	11	CA10
+Ies	1
+#prm	2
+0.09	0.09	
+R1=	0
+R2=	0
+esyn#=12	11	CA10	12	CA11
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=13	11	CA10	13	CA12
+Ies	1
+#prm	2
+0.105	0.105	
+R1=	0
+R2=	0
+esyn#=14	14	CA13	18	CA17
+Ies	1
+#prm	2
+0.1	0.1	
+R1=	0
+R2=	0
+esyn#=15	14	CA13	15	CA14
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=16	15	CA14	16	CA15
+Ies	1
+#prm	2
+0.175	0.175	
+R1=	0
+R2=	0
+esyn#=17	15	CA14	17	CA16
+Ies	1
+#prm	2
+0.1	0.1	
+R1=	0
+R2=	0
+esyn#=18	18	CA17	19	CA18
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=19	18	CA17	20	CA19
+Ies	1
+#prm	2
+0.09	0.09	
+R1=	0
+R2=	0
+esyn#=20	20	CA19	21	CA20
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=21	20	CA19	22	CA21
+Ies	1
+#prm	2
+0.09	0.09	
+R1=	0
+R2=	0
+esyn#=22	22	CA21	23	CA22
+Ies	1
+#prm	2
+0.065	0.065	
+R1=	0
+R2=	0
+esyn#=23	22	CA21	24	CA23
+Ies	1
+#prm	2
+0.09	0.09	
+R1=	0
+R2=	0
+esyn#=24	24	CA23	25	CA24
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=25	24	CA23	26	CA25
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=26	26	CA25	27	CA26
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=27	27	CA26	28	CA27
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=28	28	CA27	29	CA28
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=29	29	CA28	30	CA29
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=30	30	CA29	31	CA30
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=31	31	CA30	32	CA31
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=32	32	CA31	33	CA32
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=33	33	CA32	34	CA33
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=34	34	CA33	35	CA34
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=35	35	CA34	36	CA35
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=36	36	CA35	37	CA36
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=37	37	CA36	38	CA37
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=38	38	CA37	39	CA38
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=39	39	CA38	40	CA39
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=40	40	CA39	41	CA40
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=41	40	CA39	42	CA41
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=42	42	CA41	43	CA42
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=43	42	CA41	44	CA43
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=44	44	CA43	45	CA44
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=45	44	CA43	46	CA45
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=46	46	CA45	50	CA49
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=47	46	CA45	47	CA46
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=48	47	CA46	48	CA47
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=49	48	CA47	49	CA48
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=50	50	CA49	51	CA50
+Ies	1
+#prm	2
+0.08	0.08	
+R1=	0
+R2=	0
+esyn#=51	50	CA49	52	CA51
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=52	52	CA51	53	CA52
+Ies	1
+#prm	2
+0.08	0.08	
+R1=	0
+R2=	0
+esyn#=53	52	CA51	54	CA53
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=54	54	CA53	58	CA57
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=55	54	CA53	55	CA54
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=56	55	CA54	56	CA55
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=57	56	CA55	57	CA56
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=58	58	CA57	59	CA58
+Ies	1
+#prm	2
+0.08	0.08	
+R1=	0
+R2=	0
+esyn#=59	58	CA57	60	CA59
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=60	60	CA59	61	CA60
+Ies	1
+#prm	2
+0.08	0.08	
+R1=	0
+R2=	0
+esyn#=61	60	CA59	62	CA61
+Ies	1
+#prm	2
+0.08	0.08	
+R1=	0
+R2=	0
+esyn#=62	1	C1	63	CP1
+Ies	1
+#prm	2
+0.84	0.84	
+R1=	0
+R2=	0
+esyn#=63	63	CP1	64	CP2
+Ies	1
+#prm	2
+1.18	1.18	
+R1=	0
+R2=	0
+esyn#=64	63	CP1	65	CP3
+Ies	1
+#prm	2
+1.4	1.4	
+R1=	0
+R2=	0
+esyn#=65	64	CP2	66	CP4
+Ies	1
+#prm	2
+1.18	1.18	
+R1=	0
+R2=	0
+esyn#=66	64	CP2	67	CP5
+Ies	1
+#prm	2
+1.18	1.18	
+R1=	0
+R2=	0
+esyn#=67	67	CP5	68	CP6
+Ies	1
+#prm	2
+1.18	1.18	
+R1=	0
+R2=	0
+esyn#=68	67	CP5	69	CP7
+Ies	1
+#prm	2
+0.4	0.4	
+R1=	0
+R2=	0
+esyn#=69	69	CP7	70	CP8
+Ies	1
+#prm	2
+0.4	0.4	
+R1=	0
+R2=	0
+esyn#=70	70	CP8	71	CP9
+Ies	1
+#prm	2
+0.4	0.4	
+R1=	0
+R2=	0
+esyn#=71	65	CP3	72	CP10
+Ies	1
+#prm	2
+0.18	0.18	
+R1=	0
+R2=	0
+esyn#=72	65	CP3	74	CP12
+Ies	1
+#prm	2
+2.09	2.09	
+R1=	0
+R2=	0
+esyn#=73	72	CP10	73	CP11
+Ies	1
+#prm	2
+1.18	1.18	
+R1=	0
+R2=	0
+esyn#=74	74	CP12	75	CP13
+Ies	1
+#prm	2
+2.09	2.09	
+R1=	0
+R2=	0
+esyn#=75	75	CP13	76	CP14
+Ies	1
+#prm	2
+0.18	0.18	
+R1=	0
+R2=	0
+esyn#=76	75	CP13	78	CP16
+Ies	1
+#prm	2
+2.09	2.09	
+R1=	0
+R2=	0
+esyn#=77	76	CP14	77	CP15
+Ies	1
+#prm	2
+0.18	0.18	
+R1=	0
+R2=	0
+esyn#=78	78	CP16	79	CP17
+Ies	1
+#prm	2
+0.4	0.4	
+R1=	0
+R2=	0
+esyn#=79	78	CP16	82	CP20
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=80	79	CP17	80	CP18
+Ies	1
+#prm	2
+0.4	0.4	
+R1=	0
+R2=	0
+esyn#=81	80	CP18	81	CP19
+Ies	1
+#prm	2
+0.4	0.4	
+R1=	0
+R2=	0
+esyn#=82	82	CP20	83	CP21
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=83	82	CP20	84	CP22
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=84	84	CP22	85	CP23
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=85	84	CP22	86	CP24
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=86	86	CP24	87	CP25
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=87	86	CP24	88	CP26
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=88	88	CP26	89	CP27
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=89	88	CP26	90	CP28
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=90	90	CP28	91	CP29
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=91	90	CP28	92	CP30
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=92	92	CP30	93	CP31
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=93	93	CP31	94	CP32
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=94	94	CP32	95	CP33
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=95	95	CP33	96	CP34
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=96	96	CP34	97	CP35
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=97	97	CP35	98	CP36
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=98	98	CP36	99	CP37
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=99	99	CP37	100	CP38
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=100	100	CP38	101	CP39
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=101	101	CP39	102	CP40
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=102	102	CP40	103	CP41
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=103	103	CP41	104	CP42
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=104	104	CP42	105	CP43
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=105	105	CP43	106	CP44
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=106	106	CP44	107	CP45
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=107	106	CP44	108	CP46
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=108	108	CP46	109	CP47
+Ies	1
+#prm	2
+0.065	0.065	
+R1=	0
+R2=	0
+esyn#=109	108	CP46	110	CP48
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=110	110	CP48	111	CP49
+Ies	1
+#prm	2
+0.065	0.065	
+R1=	0
+R2=	0
+esyn#=111	110	CP48	112	CP50
+Ies	1
+#prm	2
+0.065	0.065	
+R1=	0
+R2=	0
+esyn#=112	112	CP50	113	CP51
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=113	112	CP50	114	CP52
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=114	114	CP52	115	CP53
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=115	114	CP52	116	CP54
+Ies	1
+#prm	2
+0.045	0.045	
+R1=	0
+R2=	0
+esyn#=116	116	CP54	122	CP60
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=117	116	CP54	117	CP55
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=118	117	CP55	118	CP56
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=119	117	CP55	119	CP57
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=120	119	CP57	120	CP58
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=121	120	CP58	121	CP59
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=122	122	CP60	123	CP61
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=123	122	CP60	124	CP62
+Ies	1
+#prm	2
+0.13	0.13	
+R1=	0
+R2=	0
+esyn#=124	124	CP62	125	CP63
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=125	124	CP62	126	CP64
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+esyn#=126	126	CP64	127	CP65
+Ies	1
+#prm	2
+0.05	0.05	
+R1=	0
+R2=	0
+#CSYN	0
+#MSYN	0
+#WEIGHT	0
+
+#CINJ	1
+	0	Soma	0.05	0.35	0.6
+#MINJ	0
+#VCLMP	0
+#ICLMP	0
+#LIGHT	0
+
+Ousfile_PATH  C:\Programmi\Houston\Manuscript_Second_Version\Simulations\Nuovi_valori_tempi\T_Cell.ous
+#GRAPH_CHNL	4
+gain=	1
+nvar=	2
+name=	time<{ivr}
+vartype=	3
+n_tic=	5
+min=	0.0
+max=	0.4
+color=	red
+gain=	1
+nvar=	2
+name=	time<{ivr}
+vartype=	3
+n_tic=	5
+min=	0.0
+max=	0.4
+color=	red
+gain=	1
+nvar=	1
+name=	time<{ivr}
+vartype=	3
+n_tic=	5
+min=	0.0
+max=	0.4
+color=	red
+gain=	1
+nvar=	1
+name=	time<{ivr}
+vartype=	3
+n_tic=	5
+min=	0.0
+max=	0.4
+color=	red
+#GRAPH_VAR	6
+chn_id=	0
+name=	IVDxREG[NaPump.CA49...]<{ivr}
+name2=	NULL
+vartype=	3
+vartype2=	-1
+n_tic=	2
+min=	0.0
+max=	0.01
+color=	blue
+chn_id=	0
+name=	Cion[O8IonNa.CA49...]<{ivr}
+name2=	NULL
+vartype=	3
+vartype2=	-1
+n_tic=	4
+min=	-0.05
+max=	0.05
+color=	green
+chn_id=	1
+name=	IVDxREG[KCa.CA49...]<{ivr}
+name2=	NULL
+vartype=	3
+vartype2=	-1
+n_tic=	1
+min=	0.0
+max=	0.05
+color=	blue
+chn_id=	1
+name=	Cion[O8IonCa.CA49...]<{ivr}
+name2=	NULL
+vartype=	3
+vartype2=	-1
+n_tic=	1
+min=	-0.05
+max=	0.05
+color=	yellow
+chn_id=	2
+name=	V[CA48....]<{ivr}
+name2=	NULL
+vartype=	3
+vartype2=	-1
+n_tic=	1
+min=	-90.0
+max=	50.0
+color=	red
+chn_id=	3
+name=	V[Soma....]<{ivr}
+name2=	NULL
+vartype=	3
+vartype2=	-1
+n_tic=	1
+min=	-90.0
+max=	50.0
+color=	red
+#VAR2FILE		2
+name=	time<{ivr}
+vartype=	3
+name=	V[Soma....]<{ivr}
+vartype=	3
+
